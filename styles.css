@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    display: flex;    
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+
+
+.post{
+
+    background-color: white;
+    width: 100%;
+    max-width: 550px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.post-header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.post-header-left{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: auto;
+}
+
+.post-header-right{
+    align-items: center;
+    display:flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.post-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px 8px;
+  width: 100%;
+  font-size: 16px;   /* 👈 tamaño más pequeño para todos */
+}
+
+
+.post-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.texto-inicial,
+.texto-final {
+  width: 100%;
+  padding: 0 18px;          /* 👈 mismo padding que los iconos */
+  box-sizing: border-box;   /* asegura que el padding no altere el ancho */
+  color: #222;
+  line-height: 1.4;
+}
+
+.texto-inicial {
+  text-align: left;
+  margin-top: 4px;          
+  font-weight: 500;
+}
+
+
+.texto-final {
+  text-align: justify;      
+  margin-top: 4px;
+  margin-bottom: 12px;     
+}
